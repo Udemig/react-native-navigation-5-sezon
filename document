@@ -1,0 +1,23 @@
+1-)Öncelikle her paket kurulumu yapmadan önce metroyu durdurun.
+
+2-) Navigation paket kurulumu için aşağıdaki komutları sırasıyla çalıştırın.
+
+-npm install @react-navigation/native
+-npm install react-native-screens react-native-safe-area-context
+-npm install react-native-gesture-handler
+-npx pod-install
+
+3-) İlgili kurulumları yaptıktan sonra gesture-handler hareketlerinin geçerli olması için index.js dosyanızın en üst satırına aşağıdaki satırı ekleyin.
+
+- import 'react-native-gesture-handler';
+
+4-) Daha sonra hangi navigation tipini kullancaksanız onu seçip projenize dahil etmeniz gerekir.
+
+Native Stack için
+-npm install @react-navigation/native-stack
+
+Bottom Tabs için
+-npm install @react-navigation/bottom-tabs
+
+Drawer için
+-npm install @react-navigation/drawer
